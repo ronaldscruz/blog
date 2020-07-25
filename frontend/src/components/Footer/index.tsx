@@ -15,7 +15,14 @@ const Footer: React.FC = () => {
         >
           <AiFillGithub size={22} />
         </a>
-        <span>Conditions could hardly be more ideal!</span>
+        <a
+          className="link-reset"
+          href="https://www.youtube.com/watch?v=PuPYIfcSz_Y&cc_load_policy=1"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Make your life spectacular
+        </a>
       </footer>
     </div>
   )

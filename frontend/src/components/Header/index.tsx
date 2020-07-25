@@ -34,7 +34,7 @@ const Header: React.FC = () => {
           <li>
             <Link
               className="link-reset"
-              to={`/category/${slugify(category.name, { lower: true })}`}
+              to={`/${slugify(category.name, { lower: true })}`}
             >
               <Button>{category.name}</Button>
             </Link>

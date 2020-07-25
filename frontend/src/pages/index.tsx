@@ -8,7 +8,15 @@ type Props = {}
 const IndexPage: React.FC<Props> = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
+    <h1>
+      <span role="img" aria-label="under construction">
+        🚧
+      </span>{" "}
+      Under construction{" "}
+      <span role="img" aria-label="under construction">
+        🚧
+      </span>
+    </h1>
   </Layout>
 )
 
