@@ -107,7 +107,13 @@ coverage
 # Strapi
 ############################
 
-.env
 exports
 .cache
 build
+
+############################
+# Environment
+############################
+
+.env
+.env.development

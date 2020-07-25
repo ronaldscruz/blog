@@ -2,7 +2,7 @@
   "name": "ronaldscruz-cms",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "CMS of Ronald S. Cruz blog",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -11,20 +11,22 @@
   },
   "devDependencies": {},
   "dependencies": {
+    "dotenv": "^8.2.0",
+    "knex": "<0.20.0",
+    "pg": "^8.3.0",
+    "sqlite3": "latest",
     "strapi": "3.0.6",
     "strapi-admin": "3.0.6",
-    "strapi-utils": "3.0.6",
-    "strapi-plugin-content-type-builder": "3.0.6",
+    "strapi-connector-bookshelf": "3.0.6",
     "strapi-plugin-content-manager": "3.0.6",
-    "strapi-plugin-users-permissions": "3.0.6",
+    "strapi-plugin-content-type-builder": "3.0.6",
     "strapi-plugin-email": "3.0.6",
     "strapi-plugin-upload": "3.0.6",
-    "strapi-connector-bookshelf": "3.0.6",
-    "knex": "<0.20.0",
-    "sqlite3": "latest"
+    "strapi-plugin-users-permissions": "3.0.6",
+    "strapi-utils": "3.0.6"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Ronald S. Cruz"
   },
   "strapi": {
     "uuid": "4221d4c0-99f7-4401-99cd-9c3169b5e9ee"
