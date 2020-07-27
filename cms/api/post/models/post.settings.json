@@ -25,6 +25,9 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "lead": {
+      "type": "string"
     }
   }
 }

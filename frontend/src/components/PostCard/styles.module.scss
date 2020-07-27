@@ -1,0 +1,23 @@
+.post-card {
+  display: inline-flex;
+  flex-direction: column;
+  max-width: 320px;
+  max-height: 400px;
+
+  img {
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  small {
+    line-height: 1.2em;
+    height: 2.4em;
+    margin-bottom: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
+  }
+}
