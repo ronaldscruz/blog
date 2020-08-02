@@ -1,11 +1,16 @@
 .post-card {
   display: inline-flex;
   flex-direction: column;
-  max-width: 360px;
+  width: 360px;
 
   @media only screen and (max-width: 960px) {
     display: flex;
-    max-width: 100%;
+    width: 100%;
+  }
+
+  img,
+  h1 {
+    cursor: pointer;
   }
 
   img {

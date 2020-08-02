@@ -40,13 +40,13 @@ const IndexPage: React.FC<Props> = () => {
       <section className={styles.sectionWrapper}>
         <h1>Most read</h1>
         {posts.map(({ post }) => (
-          <PostCard post={post} />
+          <PostCard key={post.id} post={post} />
         ))}
       </section>
       <section className={styles.sectionWrapper}>
         <h1>Recent</h1>
         {posts.map(({ post }) => (
-          <PostCard post={post} />
+          <PostCard key={post.id} post={post} />
         ))}
       </section>
     </Layout>

@@ -31,7 +31,7 @@ const Header: React.FC = () => {
       </Link>
       <ul>
         {categories.map(({ category }) => (
-          <li>
+          <li key={category.name}>
             <Link
               className="link-reset"
               to={`/${slugify(category.name, { lower: true })}`}
