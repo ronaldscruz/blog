@@ -1,0 +1,36 @@
+.article-wrapper {
+  width: 70%;
+
+  @media only screen and (max-width: 960px) {
+    width: 100%;
+  }
+
+  h1 {
+    margin-top: 48px;
+
+    &:first-of-type {
+      margin-top: 16px;
+      font-size: 2em;
+    }
+  }
+
+  p {
+    word-wrap: break-word;
+    line-height: 1.5em;
+
+    &:first-of-type {
+      font-style: italic;
+      margin: 48px 0;
+    }
+  }
+
+  pre {
+    background-color: #333;
+    padding: 16px 24px;
+    border-radius: 6px;
+  }
+
+  li {
+    margin-bottom: 16px;
+  }
+}

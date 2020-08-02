@@ -1,4 +1,5 @@
 import React from "react"
+import styles from "./styles.module.scss"
 
 import Layout from "../../components/Layout"
 
@@ -42,12 +43,12 @@ const PostTemplate: React.FC<Props> = ({ data }) => {
 
   return (
     <Layout>
-      <article>
+      <article className={styles.articleWrapper}>
         <h1>{title}</h1>
         <p>{lead}</p>
         <ReactMarkdown
           source={content}
-          transformImageUri={uri => `${process.env.STRAPI_URL}/${uri}`}
+          transformImageUri={uri => `${process.env.STRAPI_URL}${uri}`}
         ></ReactMarkdown>
       </article>
     </Layout>
