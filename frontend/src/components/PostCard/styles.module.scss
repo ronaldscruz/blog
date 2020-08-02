@@ -1,13 +1,21 @@
 .post-card {
   display: inline-flex;
   flex-direction: column;
-  max-width: 320px;
-  max-height: 400px;
+  max-width: 360px;
+
+  @media only screen and (max-width: 960px) {
+    display: flex;
+    max-width: 100%;
+  }
 
   img {
-    max-height: 200px;
+    height: 250px;
     object-fit: cover;
     border-radius: 8px;
+
+    @media only screen and (max-width: 960px) {
+      height: 320px;
+    }
   }
 
   small {

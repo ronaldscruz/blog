@@ -1,0 +1,10 @@
+.section-wrapper {
+  article {
+    margin-right: 24px;
+
+    @media only screen and (max-width: 960px) {
+      margin-right: 0;
+      margin-bottom: 24px;
+    }
+  }
+}

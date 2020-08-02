@@ -1,4 +1,5 @@
 import React from "react"
+import styles from "./index.module.scss"
 
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
@@ -36,13 +37,13 @@ const IndexPage: React.FC<Props> = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <section>
+      <section className={styles.sectionWrapper}>
         <h1>Most read</h1>
         {posts.map(({ post }) => (
           <PostCard post={post} />
         ))}
       </section>
-      <section>
+      <section className={styles.sectionWrapper}>
         <h1>Recent</h1>
         {posts.map(({ post }) => (
           <PostCard post={post} />
